@@ -1,6 +1,6 @@
 var maxCouponsAllowed = 150;
-var unloadCouponFromCardClassName = "kds-Button kds-Button--destructiveSecondary kds-Button--compact CouponButton";
+var loadCouponToCardClassName = "kds-Button kds-Button--primary kds-Button--compact CouponActionButton";
 for (var i = 0; i < maxCouponsAllowed; i++) {
-	document.getElementsByClassName(unloadCouponFromCardClassName)[i].click();
+	document.getElementsByClassName(loadCouponToCardClassName)[i].click();
 	setTimeout(function(){}, 250); //Time out to not overload website.
 }
