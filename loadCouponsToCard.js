@@ -1,10 +1,8 @@
-var x = 1;
-var y = 2;
-var z = x + y;
-console.log(z);
-var maxCouponsAllowed = 150;
-var loadCouponToCardClassName = "CouponActionButton";
-for (var i = 0; i < maxCouponsAllowed; i++) {
-document.getElementsByClassName(loadCouponToCardClassName)[i].click();
-setTimeout(function(){}, 250); 
+const maxCouponsAllowed = 150;
+const loadCouponToCardClassName = "CouponActionButton";
+
+for (let i = 0; i < maxCouponsAllowed; i++) {
+  setTimeout(() => {
+    document.getElementsByClassName(loadCouponToCardClassName)[i].click();
+  }, 250 * i);
 }
